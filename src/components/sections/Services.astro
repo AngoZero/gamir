@@ -3,7 +3,7 @@
 import { Scissors, User, Check, Paintbrush, Zap, Smile, ShoppingBag } from 'lucide-astro';
 ---
 
-<section id="services" class="py-20 bg-luxury-black-900">
+<section id="services" class="py-20 bg-rose-gold-50 dark:bg-luxury-black-900 transition-colors duration-300">
   <div class="container mx-auto px-6">
     <div class="max-w-4xl mx-auto text-center mb-16">
       <h2
@@ -11,105 +11,98 @@ import { Scissors, User, Check, Paintbrush, Zap, Smile, ShoppingBag } from 'luci
       >
         Nuestros Servicios
       </h2>
-      <p class="text-lg text-gray-300">
+      <p class="text-lg text-gray-700 dark:text-gray-300">
         Ofrecemos una amplia gama de servicios profesionales de belleza y estilismo para realzar tu imagen
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Cortes de Cabello -->
       <div
-        class="bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-500/30 hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
+        class="bg-white dark:bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-300 dark:border-rose-gold-500/30 hover:border-rose-gold-500 dark:hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
       >
-        <div class="text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
+        <div class="text-rose-gold-600 dark:text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
           <Scissors class="w-12 h-12" />
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-500">
+        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-600 dark:text-rose-gold-500">
           Cortes de Cabello
         </h3>
-        <p class="text-gray-400">
+        <p class="text-gray-600 dark:text-gray-400">
           Cortes modernos y clásicos para hombre y mujer con las últimas tendencias
         </p>
       </div>
 
-      <!-- Barba -->
       <div
-        class="bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-500/30 hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
+        class="bg-white dark:bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-300 dark:border-rose-gold-500/30 hover:border-rose-gold-500 dark:hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
       >
-        <div class="text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
+        <div class="text-rose-gold-600 dark:text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
           <User class="w-12 h-12" />
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-500">Arreglo de Barba</h3>
-        <p class="text-gray-400">
+        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-600 dark:text-rose-gold-500">Arreglo de Barba</h3>
+        <p class="text-gray-600 dark:text-gray-400">
           Perfilado y arreglo profesional de barba para lucir impecable
         </p>
       </div>
 
-      <!-- Depilación -->
       <div
-        class="bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-500/30 hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
+        class="bg-white dark:bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-300 dark:border-rose-gold-500/30 hover:border-rose-gold-500 dark:hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
       >
-        <div class="text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
+        <div class="text-rose-gold-600 dark:text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
           <Check class="w-12 h-12" />
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-500">Depilación</h3>
-        <p class="text-gray-400">
+        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-600 dark:text-rose-gold-500">Depilación</h3>
+        <p class="text-gray-600 dark:text-gray-400">
           Depilación de cejas y bozo con técnicas profesionales
         </p>
       </div>
 
-      <!-- Tintes y Color -->
       <div
-        class="bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-500/30 hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
+        class="bg-white dark:bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-300 dark:border-rose-gold-500/30 hover:border-rose-gold-500 dark:hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
       >
-        <div class="text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
+        <div class="text-rose-gold-600 dark:text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
           <Paintbrush class="w-12 h-12" />
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-500">Tintes y Coloración</h3>
-        <p class="text-gray-400">
+        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-600 dark:text-rose-gold-500">Tintes y Coloración</h3>
+        <p class="text-gray-600 dark:text-gray-400">
           Tintes, mechas y balayage con productos de alta calidad
         </p>
       </div>
 
-      <!-- Alisados -->
       <div
-        class="bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-500/30 hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
+        class="bg-white dark:bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-300 dark:border-rose-gold-500/30 hover:border-rose-gold-500 dark:hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
       >
-        <div class="text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
+        <div class="text-rose-gold-600 dark:text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
           <Zap class="w-12 h-12" />
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-500">Alisados</h3>
-        <p class="text-gray-400">
+        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-600 dark:text-rose-gold-500">Alisados</h3>
+        <p class="text-gray-600 dark:text-gray-400">
           Tratamientos de alisado profesional para cabello liso y suave
         </p>
       </div>
 
-      <!-- Manicure y Pedicure -->
       <div
-        class="bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-500/30 hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
+        class="bg-white dark:bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-300 dark:border-rose-gold-500/30 hover:border-rose-gold-500 dark:hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
       >
-        <div class="text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
+        <div class="text-rose-gold-600 dark:text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
           <Smile class="w-12 h-12" />
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-500">
+        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-600 dark:text-rose-gold-500">
           Manicure y Pedicure
         </h3>
-        <p class="text-gray-400">
+        <p class="text-gray-600 dark:text-gray-400">
           Cuidado completo de manos y pies para lucir impecable
         </p>
       </div>
 
-      <!-- Tienda Avina -->
       <div
-        class="bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-500/30 hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
+        class="bg-white dark:bg-luxury-black-800/50 p-8 rounded-xl border-2 border-rose-gold-300 dark:border-rose-gold-500/30 hover:border-rose-gold-500 dark:hover:border-rose-gold-500/70 transition-all hover:shadow-xl hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
       >
-        <div class="text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
+        <div class="text-rose-gold-600 dark:text-rose-gold-500 mb-4 group-hover:scale-110 transition-transform inline-block">
           <ShoppingBag class="w-12 h-12" />
         </div>
-        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-500">
+        <h3 class="text-2xl font-semibold mb-3 text-rose-gold-600 dark:text-rose-gold-500">
           Productos Avina
         </h3>
-        <p class="text-gray-400">
+        <p class="text-gray-600 dark:text-gray-400">
           Venta de productos profesionales Avina para el cuidado del cabello
         </p>
       </div>

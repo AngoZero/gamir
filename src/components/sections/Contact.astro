@@ -9,7 +9,7 @@ import {
 } from "lucide-astro";
 ---
 
-<section id="contact" class="py-20 bg-luxury-black-800">
+<section id="contact" class="py-20 bg-rose-gold-50 dark:bg-luxury-black-800 transition-colors duration-300">
   <div class="container mx-auto px-6">
     <div class="max-w-4xl mx-auto text-center mb-16">
       <h2
@@ -17,7 +17,7 @@ import {
       >
         Contáctanos
       </h2>
-      <p class="text-lg text-gray-300">
+      <p class="text-lg text-gray-700 dark:text-gray-300">
         Agenda tu cita o visítanos en nuestro salón en Tampico
       </p>
     </div>
@@ -25,7 +25,7 @@ import {
     <div class="grid lg:grid-cols-2 gap-12 mb-16">
       <div class="space-y-8">
         <div>
-          <h3 class="text-2xl font-semibold mb-6 text-rose-gold-500">
+          <h3 class="text-2xl font-semibold mb-6 text-rose-gold-600 dark:text-rose-gold-500">
             Información de Contacto
           </h3>
         </div>
@@ -33,40 +33,40 @@ import {
         <div class="flex items-start space-x-4">
           <div class="flex-shrink-0">
             <div
-              class="w-12 h-12 bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-500/40"
+              class="w-12 h-12 bg-rose-gold-200 dark:bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-400 dark:border-rose-gold-500/40"
             >
-              <Mail class="w-6 h-6 text-rose-gold-500" />
+              <Mail class="w-6 h-6 text-rose-gold-600 dark:text-rose-gold-500" />
             </div>
           </div>
           <div>
-            <h4 class="font-semibold text-gray-200 mb-1">Correo Electrónico</h4>
+            <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-1">Correo Electrónico</h4>
             <a
               href="mailto:contacto.gamir@gmail.com"
-              class="text-rose-gold-500 hover:text-rose-gold-600 transition"
+              class="text-rose-gold-600 dark:text-rose-gold-500 hover:text-rose-gold-700 dark:hover:text-rose-gold-600 transition"
             >
               contacto.gamir@gmail.com
             </a>
-            <p class="text-sm text-gray-400 mt-1">Respuesta en 24-48 horas</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Respuesta en 24-48 horas</p>
           </div>
         </div>
 
         <div class="flex items-start space-x-4">
           <div class="flex-shrink-0">
             <div
-              class="w-12 h-12 bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-500/40"
+              class="w-12 h-12 bg-rose-gold-200 dark:bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-400 dark:border-rose-gold-500/40"
             >
-              <Phone class="w-6 h-6 text-rose-gold-500" />
+              <Phone class="w-6 h-6 text-rose-gold-600 dark:text-rose-gold-500" />
             </div>
           </div>
           <div>
-            <h4 class="font-semibold text-gray-200 mb-1">Teléfono</h4>
+            <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-1">Teléfono</h4>
             <a
               href="tel:+528333387811"
-              class="text-rose-gold-500 hover:text-rose-gold-600 transition"
+              class="text-rose-gold-600 dark:text-rose-gold-500 hover:text-rose-gold-700 dark:hover:text-rose-gold-600 transition"
             >
               (833) 338-7811
             </a>
-            <p class="text-sm text-gray-400 mt-1">
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">
               Lunes a Sábado, 10:00 - 20:00
             </p>
           </div>
@@ -75,35 +75,35 @@ import {
         <div class="flex items-start space-x-4">
           <div class="flex-shrink-0">
             <div
-              class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center border-2 border-green-500/30"
+              class="w-12 h-12 bg-green-100 dark:bg-green-500/20 rounded-lg flex items-center justify-center border-2 border-green-300 dark:border-green-500/30"
             >
-              <MessageSquare class="w-6 h-6 text-green-400" />
+              <MessageSquare class="w-6 h-6 text-green-600 dark:text-green-400" />
             </div>
           </div>
           <div>
-            <h4 class="font-semibold text-gray-200 mb-1">WhatsApp</h4>
+            <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-1">WhatsApp</h4>
             <a
               href="https://wa.me/528333387811"
               target="_blank"
-              class="text-green-400 hover:text-green-300 transition"
+              class="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 transition"
             >
               (833) 338-7811
             </a>
-            <p class="text-sm text-gray-400 mt-1">Disponible 24/7</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Disponible 24/7</p>
           </div>
         </div>
 
         <div class="flex items-start space-x-4">
           <div class="flex-shrink-0">
             <div
-              class="w-12 h-12 bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-500/40"
+              class="w-12 h-12 bg-rose-gold-200 dark:bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-400 dark:border-rose-gold-500/40"
             >
-              <MapPin class="w-6 h-6 text-rose-gold-500" />
+              <MapPin class="w-6 h-6 text-rose-gold-600 dark:text-rose-gold-500" />
             </div>
           </div>
           <div>
-            <h4 class="font-semibold text-gray-200 mb-1">Dirección</h4>
-            <p class="text-gray-300">
+            <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-1">Dirección</h4>
+            <p class="text-gray-700 dark:text-gray-300">
               Emiliano Zapata 229<br />
               Colonia La Paz<br />
               Tampico, Tamaulipas
@@ -114,16 +114,16 @@ import {
         <div class="flex items-start space-x-4">
           <div class="flex-shrink-0">
             <div
-              class="w-12 h-12 bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-500/40"
+              class="w-12 h-12 bg-rose-gold-200 dark:bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-400 dark:border-rose-gold-500/40"
             >
-              <Clock class="w-6 h-6 text-rose-gold-500" />
+              <Clock class="w-6 h-6 text-rose-gold-600 dark:text-rose-gold-500" />
             </div>
           </div>
           <div>
-            <h4 class="font-semibold text-gray-200 mb-1">
+            <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-1">
               Horario de Atención
             </h4>
-            <p class="text-gray-300">
+            <p class="text-gray-700 dark:text-gray-300">
               Lunes a Sábado: 10:00 - 20:00<br />
               Domingos: Cerrado
             </p>
@@ -132,9 +132,9 @@ import {
       </div>
 
       <div
-        class="bg-luxury-black-900/90 p-8 rounded-xl border-2 border-rose-gold-500/30 backdrop-blur-sm"
+        class="bg-white dark:bg-luxury-black-900/90 p-8 rounded-xl border-2 border-rose-gold-300 dark:border-rose-gold-500/30 backdrop-blur-sm shadow-lg"
       >
-        <h3 class="text-2xl font-semibold mb-6 text-rose-gold-500">
+        <h3 class="text-2xl font-semibold mb-6 text-rose-gold-600 dark:text-rose-gold-500">
           Agenda tu cita
         </h3>
 
@@ -142,7 +142,7 @@ import {
           <div>
             <label
               for="nombre"
-              class="block text-sm font-medium text-gray-300 mb-2"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
             >
               Nombre completo *
             </label>
@@ -150,7 +150,7 @@ import {
               type="text"
               id="nombre"
               required
-              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+              class="w-full px-4 py-3 rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-900 dark:text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
               placeholder="Tu nombre"
             />
           </div>
@@ -158,7 +158,7 @@ import {
           <div>
             <label
               for="telefono"
-              class="block text-sm font-medium text-gray-300 mb-2"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
             >
               Teléfono *
             </label>
@@ -166,7 +166,7 @@ import {
               type="tel"
               id="telefono"
               required
-              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+              class="w-full px-4 py-3 rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-900 dark:text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
               placeholder="Ej: 833-123-4567"
             />
           </div>
@@ -174,14 +174,14 @@ import {
           <div>
             <label
               for="servicio"
-              class="block text-sm font-medium text-gray-300 mb-2"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
             >
               Servicio deseado *
             </label>
             <select
               id="servicio"
               required
-              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+              class="w-full px-4 py-3 rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-900 dark:text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
             >
               <option value="">Selecciona un servicio</option>
               <option value="Corte de Cabello">Corte de Cabello</option>
@@ -197,7 +197,7 @@ import {
           </div>
 
           <div>
-            <label class="block text-sm font-medium text-gray-300 mb-2">
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Género *
             </label>
             <div class="grid grid-cols-3 gap-3">
@@ -210,7 +210,7 @@ import {
                   class="peer sr-only"
                 />
                 <div
-                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                  class="px-4 py-3 text-center rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-700 dark:text-gray-300 cursor-pointer peer-checked:bg-rose-gold-300 dark:peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-600 dark:peer-checked:text-rose-gold-500 transition"
                 >
                   Hombre
                 </div>
@@ -224,7 +224,7 @@ import {
                   class="peer sr-only"
                 />
                 <div
-                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                  class="px-4 py-3 text-center rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-700 dark:text-gray-300 cursor-pointer peer-checked:bg-rose-gold-300 dark:peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-600 dark:peer-checked:text-rose-gold-500 transition"
                 >
                   Mujer
                 </div>
@@ -238,7 +238,7 @@ import {
                   class="peer sr-only"
                 />
                 <div
-                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                  class="px-4 py-3 text-center rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-700 dark:text-gray-300 cursor-pointer peer-checked:bg-rose-gold-300 dark:peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-600 dark:peer-checked:text-rose-gold-500 transition"
                 >
                   Otro
                 </div>
@@ -247,7 +247,7 @@ import {
           </div>
 
           <div>
-            <label class="block text-sm font-medium text-gray-300 mb-2">
+            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
               Rango de edad *
             </label>
             <div class="grid grid-cols-3 gap-3">
@@ -260,7 +260,7 @@ import {
                   class="peer sr-only"
                 />
                 <div
-                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                  class="px-4 py-3 text-center rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-700 dark:text-gray-300 cursor-pointer peer-checked:bg-rose-gold-300 dark:peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-600 dark:peer-checked:text-rose-gold-500 transition"
                 >
                   Niño
                 </div>
@@ -274,7 +274,7 @@ import {
                   class="peer sr-only"
                 />
                 <div
-                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                  class="px-4 py-3 text-center rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-700 dark:text-gray-300 cursor-pointer peer-checked:bg-rose-gold-300 dark:peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-600 dark:peer-checked:text-rose-gold-500 transition"
                 >
                   Joven
                 </div>
@@ -288,7 +288,7 @@ import {
                   class="peer sr-only"
                 />
                 <div
-                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                  class="px-4 py-3 text-center rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-700 dark:text-gray-300 cursor-pointer peer-checked:bg-rose-gold-300 dark:peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-600 dark:peer-checked:text-rose-gold-500 transition"
                 >
                   Adulto
                 </div>
@@ -299,7 +299,7 @@ import {
           <div>
             <label
               for="fecha"
-              class="block text-sm font-medium text-gray-300 mb-2"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
             >
               Fecha preferida *
             </label>
@@ -307,21 +307,21 @@ import {
               type="date"
               id="fecha"
               required
-              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+              class="w-full px-4 py-3 rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-900 dark:text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
             />
           </div>
 
           <div>
             <label
               for="horario"
-              class="block text-sm font-medium text-gray-300 mb-2"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
             >
               Horario preferido *
             </label>
             <select
               id="horario"
               required
-              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+              class="w-full px-4 py-3 rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-900 dark:text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
             >
               <option value="">Selecciona un horario</option>
               <option value="10:00 - 12:00">Mañana (10:00 - 12:00)</option>
@@ -334,14 +334,14 @@ import {
           <div>
             <label
               for="mensaje"
-              class="block text-sm font-medium text-gray-300 mb-2"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
             >
               Mensaje adicional (opcional)
             </label>
             <textarea
               id="mensaje"
               rows="3"
-              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+              class="w-full px-4 py-3 rounded-lg bg-rose-gold-50 dark:bg-luxury-black-800 border-2 border-rose-gold-300 dark:border-rose-gold-500/30 text-gray-900 dark:text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
               placeholder="¿Algo más que debamos saber?"></textarea>
           </div>
 
@@ -367,7 +367,7 @@ import {
 
           <a
             href="tel:+528333387811"
-            class="flex items-center justify-center space-x-2 w-full bg-luxury-black-800 text-rose-gold-500 px-6 py-3 rounded-lg font-semibold border-2 border-rose-gold-500/40 hover:border-rose-gold-500 hover:bg-luxury-black-900 transition-all"
+            class="flex items-center justify-center space-x-2 w-full bg-rose-gold-100 dark:bg-luxury-black-800 text-rose-gold-600 dark:text-rose-gold-500 px-6 py-3 rounded-lg font-semibold border-2 border-rose-gold-400 dark:border-rose-gold-500/40 hover:border-rose-gold-500 hover:bg-rose-gold-200 dark:hover:bg-luxury-black-900 transition-all"
           >
             <Phone class="w-5 h-5" />
             <span>O llámanos: (833) 338-7811</span>
@@ -375,10 +375,10 @@ import {
         </form>
 
         <div
-          class="mt-6 p-4 bg-rose-gold-500/10 border-2 border-rose-gold-500/30 rounded-lg"
+          class="mt-6 p-4 bg-rose-gold-200 dark:bg-rose-gold-500/10 border-2 border-rose-gold-400 dark:border-rose-gold-500/30 rounded-lg"
         >
-          <p class="text-xs text-gray-400 text-center">
-            <strong class="text-rose-gold-500">Horario de atención:</strong>
+          <p class="text-xs text-gray-700 dark:text-gray-400 text-center">
+            <strong class="text-rose-gold-600 dark:text-rose-gold-500">Horario de atención:</strong>
             Lunes a Sábado: 10:00 - 20:00
           </p>
         </div>
@@ -395,7 +395,7 @@ import {
       </div>
 
       <div
-        class="bg-luxury-black-900/90 p-3 rounded-2xl border-2 border-rose-gold-500/30 shadow-2xl backdrop-blur-sm"
+        class="bg-white dark:bg-luxury-black-900/90 p-3 rounded-2xl border-2 border-rose-gold-300 dark:border-rose-gold-500/30 shadow-2xl backdrop-blur-sm"
       >
         <div class="rounded-xl overflow-hidden h-[450px] relative">
           <iframe

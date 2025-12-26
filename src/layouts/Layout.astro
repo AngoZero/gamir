@@ -22,6 +22,13 @@ const ogImage = new URL(image, Astro.site);
 <!DOCTYPE html>
 <html lang="es-MX">
   <head>
+    <script is:inline>
+      (function() {
+        const theme = localStorage.getItem("theme") || "dark";
+        document.documentElement.classList.remove("light", "dark");
+        document.documentElement.classList.add(theme);
+      })();
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -69,7 +76,7 @@ const ogImage = new URL(image, Astro.site);
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://www.google.com" />
   </head>
-  <body class="bg-luxury-black-900 text-gray-100">
+  <body class="bg-white dark:bg-luxury-black-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     <slot />
   </body>
 </html>
