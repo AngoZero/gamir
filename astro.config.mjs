@@ -6,13 +6,8 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://angozero.github.io',
+
   base: '/gamir',
-
-  trailingSlash: 'never',
-
-  build: {
-    format: 'file'
-  },
 
   integrations: [sitemap()],
   vite: {
