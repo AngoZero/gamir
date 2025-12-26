@@ -1,0 +1,539 @@
+---
+import {
+  Mail,
+  Phone,
+  MapPin,
+  MessageSquare,
+  Clock,
+  Navigation,
+} from "lucide-astro";
+---
+
+<section id="contact" class="py-20 bg-luxury-black-800">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto text-center mb-16">
+      <h2
+        class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-rose-gold-500 to-rose-gold-600 bg-clip-text text-transparent mb-6"
+      >
+        Contáctanos
+      </h2>
+      <p class="text-lg text-gray-300">
+        Agenda tu cita o visítanos en nuestro salón en Tampico
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 mb-16">
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-rose-gold-500">
+            Información de Contacto
+          </h3>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="flex-shrink-0">
+            <div
+              class="w-12 h-12 bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-500/40"
+            >
+              <Mail class="w-6 h-6 text-rose-gold-500" />
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-200 mb-1">Correo Electrónico</h4>
+            <a
+              href="mailto:contacto.gamir@gmail.com"
+              class="text-rose-gold-500 hover:text-rose-gold-600 transition"
+            >
+              contacto.gamir@gmail.com
+            </a>
+            <p class="text-sm text-gray-400 mt-1">Respuesta en 24-48 horas</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="flex-shrink-0">
+            <div
+              class="w-12 h-12 bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-500/40"
+            >
+              <Phone class="w-6 h-6 text-rose-gold-500" />
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-200 mb-1">Teléfono</h4>
+            <a
+              href="tel:+528333387811"
+              class="text-rose-gold-500 hover:text-rose-gold-600 transition"
+            >
+              (833) 338-7811
+            </a>
+            <p class="text-sm text-gray-400 mt-1">
+              Lunes a Sábado, 10:00 - 20:00
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="flex-shrink-0">
+            <div
+              class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center border-2 border-green-500/30"
+            >
+              <MessageSquare class="w-6 h-6 text-green-400" />
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-200 mb-1">WhatsApp</h4>
+            <a
+              href="https://wa.me/528333387811"
+              target="_blank"
+              class="text-green-400 hover:text-green-300 transition"
+            >
+              (833) 338-7811
+            </a>
+            <p class="text-sm text-gray-400 mt-1">Disponible 24/7</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="flex-shrink-0">
+            <div
+              class="w-12 h-12 bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-500/40"
+            >
+              <MapPin class="w-6 h-6 text-rose-gold-500" />
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-200 mb-1">Dirección</h4>
+            <p class="text-gray-300">
+              Emiliano Zapata 229<br />
+              Colonia La Paz<br />
+              Tampico, Tamaulipas
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4">
+          <div class="flex-shrink-0">
+            <div
+              class="w-12 h-12 bg-rose-gold-500/20 rounded-lg flex items-center justify-center border-2 border-rose-gold-500/40"
+            >
+              <Clock class="w-6 h-6 text-rose-gold-500" />
+            </div>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-200 mb-1">
+              Horario de Atención
+            </h4>
+            <p class="text-gray-300">
+              Lunes a Sábado: 10:00 - 20:00<br />
+              Domingos: Cerrado
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-luxury-black-900/90 p-8 rounded-xl border-2 border-rose-gold-500/30 backdrop-blur-sm"
+      >
+        <h3 class="text-2xl font-semibold mb-6 text-rose-gold-500">
+          Agenda tu cita
+        </h3>
+
+        <form id="contactForm" class="space-y-4">
+          <div>
+            <label
+              for="nombre"
+              class="block text-sm font-medium text-gray-300 mb-2"
+            >
+              Nombre completo *
+            </label>
+            <input
+              type="text"
+              id="nombre"
+              required
+              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+              placeholder="Tu nombre"
+            />
+          </div>
+
+          <div>
+            <label
+              for="telefono"
+              class="block text-sm font-medium text-gray-300 mb-2"
+            >
+              Teléfono *
+            </label>
+            <input
+              type="tel"
+              id="telefono"
+              required
+              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+              placeholder="Ej: 833-123-4567"
+            />
+          </div>
+
+          <div>
+            <label
+              for="servicio"
+              class="block text-sm font-medium text-gray-300 mb-2"
+            >
+              Servicio deseado *
+            </label>
+            <select
+              id="servicio"
+              required
+              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+            >
+              <option value="">Selecciona un servicio</option>
+              <option value="Corte de Cabello">Corte de Cabello</option>
+              <option value="Arreglo de Barba">Arreglo de Barba</option>
+              <option value="Tinte/Coloración">Tinte/Coloración</option>
+              <option value="Mechas/Balayage">Mechas/Balayage</option>
+              <option value="Alisado">Alisado</option>
+              <option value="Manicure">Manicure</option>
+              <option value="Pedicure">Pedicure</option>
+              <option value="Paquete Completo">Paquete Completo</option>
+              <option value="Otro">Otro servicio</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-300 mb-2">
+              Género *
+            </label>
+            <div class="grid grid-cols-3 gap-3">
+              <label class="relative">
+                <input
+                  type="radio"
+                  name="genero"
+                  value="Hombre"
+                  required
+                  class="peer sr-only"
+                />
+                <div
+                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                >
+                  Hombre
+                </div>
+              </label>
+              <label class="relative">
+                <input
+                  type="radio"
+                  name="genero"
+                  value="Mujer"
+                  required
+                  class="peer sr-only"
+                />
+                <div
+                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                >
+                  Mujer
+                </div>
+              </label>
+              <label class="relative">
+                <input
+                  type="radio"
+                  name="genero"
+                  value="Otro"
+                  required
+                  class="peer sr-only"
+                />
+                <div
+                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                >
+                  Otro
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-300 mb-2">
+              Rango de edad *
+            </label>
+            <div class="grid grid-cols-3 gap-3">
+              <label class="relative">
+                <input
+                  type="radio"
+                  name="edad"
+                  value="Niño"
+                  required
+                  class="peer sr-only"
+                />
+                <div
+                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                >
+                  Niño
+                </div>
+              </label>
+              <label class="relative">
+                <input
+                  type="radio"
+                  name="edad"
+                  value="Joven"
+                  required
+                  class="peer sr-only"
+                />
+                <div
+                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                >
+                  Joven
+                </div>
+              </label>
+              <label class="relative">
+                <input
+                  type="radio"
+                  name="edad"
+                  value="Adulto"
+                  required
+                  class="peer sr-only"
+                />
+                <div
+                  class="px-4 py-3 text-center rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-300 cursor-pointer peer-checked:bg-rose-gold-500/20 peer-checked:border-rose-gold-500 peer-checked:text-rose-gold-500 transition"
+                >
+                  Adulto
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label
+              for="fecha"
+              class="block text-sm font-medium text-gray-300 mb-2"
+            >
+              Fecha preferida *
+            </label>
+            <input
+              type="date"
+              id="fecha"
+              required
+              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+            />
+          </div>
+
+          <div>
+            <label
+              for="horario"
+              class="block text-sm font-medium text-gray-300 mb-2"
+            >
+              Horario preferido *
+            </label>
+            <select
+              id="horario"
+              required
+              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+            >
+              <option value="">Selecciona un horario</option>
+              <option value="10:00 - 12:00">Mañana (10:00 - 12:00)</option>
+              <option value="12:00 - 14:00">Mediodía (12:00 - 14:00)</option>
+              <option value="14:00 - 17:00">Tarde (14:00 - 17:00)</option>
+              <option value="17:00 - 20:00">Noche (17:00 - 20:00)</option>
+            </select>
+          </div>
+
+          <div>
+            <label
+              for="mensaje"
+              class="block text-sm font-medium text-gray-300 mb-2"
+            >
+              Mensaje adicional (opcional)
+            </label>
+            <textarea
+              id="mensaje"
+              rows="3"
+              class="w-full px-4 py-3 rounded-lg bg-luxury-black-800 border-2 border-rose-gold-500/30 text-gray-200 focus:ring-2 focus:ring-rose-gold-500 focus:border-rose-gold-500 transition"
+              placeholder="¿Algo más que debamos saber?"></textarea>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 pt-4">
+            <button
+              type="button"
+              id="sendWhatsApp"
+              class="flex items-center justify-center space-x-2 bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-4 rounded-lg font-bold hover:from-green-600 hover:to-green-700 transition-all transform hover:scale-105 shadow-xl hover:shadow-green-500/50"
+            >
+              <MessageSquare class="w-5 h-5" />
+              <span>WhatsApp</span>
+            </button>
+
+            <button
+              type="button"
+              id="sendEmail"
+              class="flex items-center justify-center space-x-2 bg-gradient-to-r from-rose-gold-500 to-rose-gold-600 text-luxury-black-900 px-6 py-4 rounded-lg font-bold hover:from-rose-gold-600 hover:to-rose-gold-700 transition-all transform hover:scale-105 shadow-xl hover:shadow-rose-gold-500/50"
+            >
+              <Mail class="w-5 h-5" />
+              <span>Email</span>
+            </button>
+          </div>
+
+          <a
+            href="tel:+528333387811"
+            class="flex items-center justify-center space-x-2 w-full bg-luxury-black-800 text-rose-gold-500 px-6 py-3 rounded-lg font-semibold border-2 border-rose-gold-500/40 hover:border-rose-gold-500 hover:bg-luxury-black-900 transition-all"
+          >
+            <Phone class="w-5 h-5" />
+            <span>O llámanos: (833) 338-7811</span>
+          </a>
+        </form>
+
+        <div
+          class="mt-6 p-4 bg-rose-gold-500/10 border-2 border-rose-gold-500/30 rounded-lg"
+        >
+          <p class="text-xs text-gray-400 text-center">
+            <strong class="text-rose-gold-500">Horario de atención:</strong>
+            Lunes a Sábado: 10:00 - 20:00
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="location" class="max-w-6xl mx-auto">
+      <div class="text-center mb-8">
+        <h3
+          class="text-3xl font-bold bg-gradient-to-r from-rose-gold-500 to-rose-gold-600 bg-clip-text text-transparent mb-3"
+        >
+          Encuéntranos en Tampico
+        </h3>
+      </div>
+
+      <div
+        class="bg-luxury-black-900/90 p-3 rounded-2xl border-2 border-rose-gold-500/30 shadow-2xl backdrop-blur-sm"
+      >
+        <div class="rounded-xl overflow-hidden h-[450px] relative">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.373753788765!2d-97.89609262596166!3d22.305388179640873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d7fbc101d9e49d%3A0xa06d333b084f54fb!2sEmiliano%20Zapata%20229%2C%20La%20Paz%2C%2089326%20Tampico%2C%20Tamps.!5e0!3m2!1ses!2smx!4v1735173600000!5m2!1ses!2smx"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de Gamir Salon"
+            class="w-full h-full"></iframe>
+
+          <div class="absolute bottom-4 right-4">
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Emiliano+Zapata+229+Colonia+La+Paz+Tampico+Tamaulipas"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center space-x-2 bg-gradient-to-r from-rose-gold-500 to-rose-gold-600 text-luxury-black-900 px-6 py-3 rounded-xl font-bold hover:from-rose-gold-600 hover:to-rose-gold-700 transition-all transform hover:scale-105 shadow-2xl"
+            >
+              <Navigation class="w-5 h-5" />
+              <span>Cómo Llegar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contactForm") as HTMLFormElement;
+    const sendWhatsAppBtn = document.getElementById("sendWhatsApp");
+    const sendEmailBtn = document.getElementById("sendEmail");
+    const fechaInput = document.getElementById("fecha") as HTMLInputElement;
+
+    const hoy = new Date();
+    const minDate = hoy.toISOString().split("T")[0];
+
+    const añoSiguiente = hoy.getFullYear() + 1;
+    const maxDate = `${añoSiguiente}-12-31`;
+
+    fechaInput.min = minDate;
+    fechaInput.max = maxDate;
+
+    function getFormData() {
+      const nombre = (document.getElementById("nombre") as HTMLInputElement)
+        .value;
+      const telefono = (document.getElementById("telefono") as HTMLInputElement)
+        .value;
+      const servicio = (
+        document.getElementById("servicio") as HTMLSelectElement
+      ).value;
+      const genero =
+        (
+          document.querySelector(
+            'input[name="genero"]:checked',
+          ) as HTMLInputElement
+        )?.value || "";
+      const edad =
+        (
+          document.querySelector(
+            'input[name="edad"]:checked',
+          ) as HTMLInputElement
+        )?.value || "";
+      const fecha = (document.getElementById("fecha") as HTMLInputElement)
+        .value;
+      const horario = (document.getElementById("horario") as HTMLSelectElement)
+        .value;
+      const mensaje = (
+        document.getElementById("mensaje") as HTMLTextAreaElement
+      ).value;
+
+      return {
+        nombre,
+        telefono,
+        servicio,
+        genero,
+        edad,
+        fecha,
+        horario,
+        mensaje,
+      };
+    }
+
+    function validateForm(): boolean {
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return false;
+      }
+      return true;
+    }
+
+    sendWhatsAppBtn?.addEventListener("click", () => {
+      if (!validateForm()) return;
+
+      const data = getFormData();
+      const whatsappMessage = `Hola, me gustaría agendar una cita en Gamir Salon
+
+*Nombre:* ${data.nombre}
+*Teléfono:* ${data.telefono}
+*Servicio:* ${data.servicio}
+*Género:* ${data.genero}
+*Edad:* ${data.edad}
+*Fecha preferida:* ${data.fecha}
+*Horario preferido:* ${data.horario}${data.mensaje ? `\n*Mensaje:* ${data.mensaje}` : ""}
+
+¡Gracias!`;
+
+      const encodedMessage = encodeURIComponent(whatsappMessage);
+      window.open(
+        `https://wa.me/528333387811?text=${encodedMessage}`,
+        "_blank",
+      );
+    });
+
+    sendEmailBtn?.addEventListener("click", () => {
+      if (!validateForm()) return;
+
+      const data = getFormData();
+      const subject = `Solicitud de Cita - ${data.nombre}`;
+      const body = `Hola,
+
+Me gustaría agendar una cita en Gamir Salon con los siguientes datos:
+
+Nombre: ${data.nombre}
+Teléfono: ${data.telefono}
+Servicio: ${data.servicio}
+Género: ${data.genero}
+Edad: ${data.edad}
+Fecha preferida: ${data.fecha}
+Horario preferido: ${data.horario}${data.mensaje ? `\nMensaje adicional: ${data.mensaje}` : ""}
+
+¡Gracias!`;
+
+      const mailtoLink = `mailto:contacto.gamir@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+    });
+  });
+</script>

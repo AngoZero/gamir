@@ -1,0 +1,102 @@
+---
+// Sección Hero - Primera impresión
+import { ChevronDown } from 'lucide-astro';
+---
+
+<section
+  id="home"
+  class="min-h-screen flex items-center justify-center bg-luxury-black-900 text-gray-100 pt-20 relative overflow-hidden"
+>
+  <!-- Animated background elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div
+      class="absolute w-96 h-96 rounded-full blur-3xl -top-48 -left-48 animate-pulse"
+      style="background: radial-gradient(circle, rgba(224, 191, 184, 0.15) 0%, transparent 70%);"
+    >
+    </div>
+    <div
+      class="absolute w-96 h-96 rounded-full blur-3xl -bottom-48 -right-48 animate-pulse delay-1000"
+      style="background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);"
+    >
+    </div>
+  </div>
+
+  <div class="container mx-auto px-6 py-20 relative z-10">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in text-gray-100">
+        Bienvenido a <span
+          class="bg-gradient-to-r from-rose-gold-500 via-rose-gold-600 to-rose-gold-500 bg-clip-text text-transparent animate-shimmer"
+          >Gamir Salon</span
+        >
+      </h1>
+      <p class="text-xl md:text-2xl mb-8 text-gray-300 animate-fade-in-delay font-light tracking-wide">
+        Transformaciones de alta calidad y lujo exclusivo. Especialistas en cortes, color y tratamientos de belleza premium.
+      </p>
+      <div
+        class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2"
+      >
+        <a
+          href="#contact"
+          class="bg-gradient-to-r from-rose-gold-500 to-rose-gold-600 text-luxury-black-900 px-8 py-4 rounded-full font-bold hover:from-rose-gold-600 hover:to-rose-gold-700 transition-all transform hover:scale-105 shadow-xl hover:shadow-rose-gold-500/50"
+        >
+          Agendar Cita
+        </a>
+        <a
+          href="#about"
+          class="border-2 border-rose-gold-500 text-rose-gold-500 px-8 py-4 rounded-full font-bold hover:bg-rose-gold-500/10 transition-all"
+        >
+          Conocer más
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <ChevronDown class="w-6 h-6 text-rose-gold-500" />
+  </div>
+</section>
+
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes shimmer {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+
+  .animate-fade-in-delay {
+    animation: fade-in 1s ease-out 0.3s backwards;
+  }
+
+  .animate-fade-in-delay-2 {
+    animation: fade-in 1s ease-out 0.6s backwards;
+  }
+
+  .animate-shimmer {
+    background-size: 200% auto;
+    animation: shimmer 3s linear infinite;
+  }
+
+  .delay-1000 {
+    animation-delay: 1s;
+  }
+</style>

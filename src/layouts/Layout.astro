@@ -1,0 +1,75 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  type?: string;
+}
+
+const {
+  title = "Gamir Salon - Salón de Belleza Profesional en Tampico, Tamaulipas",
+  description = "Salón de belleza premium en Tampico. Especialistas en cortes de cabello, tintes, mechas, balayage, alisados, manicure, pedicure y productos Avina. Transformaciones de alta calidad. ☎️ (833) 338-7811",
+  image = "/og-image.jpg",
+  type = "website"
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(image, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="salón de belleza Tampico, peluquería Tampico, cortes de cabello Tampico, tintes Tampico, mechas Tampico, balayage Tampico, manicure Tampico, pedicure Tampico, alisados Tampico, productos Avina, salón profesional Tampico, estilista Tampico, barbería Tampico" />
+    <meta name="author" content="Gamir Salon" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Geo Tags for Local SEO -->
+    <meta name="geo.region" content="MX-TAM" />
+    <meta name="geo.placename" content="Tampico" />
+    <meta name="geo.position" content="22.305388;-97.896092" />
+    <meta name="ICBM" content="22.305388, -97.896092" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="Gamir Salon" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImage} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Generator -->
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Preconnect to improve performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://www.google.com" />
+  </head>
+  <body class="bg-luxury-black-900 text-gray-100">
+    <slot />
+  </body>
+</html>

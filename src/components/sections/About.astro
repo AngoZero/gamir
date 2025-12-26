@@ -1,0 +1,79 @@
+---
+// Sección About - Quiénes somos
+import { Zap, Shield, Smile } from 'lucide-astro';
+
+// Calcular años de experiencia desde 2004
+const añoFundacion = 2004;
+const añoActual = new Date().getFullYear();
+const añosExperiencia = añoActual - añoFundacion;
+---
+
+<section id="about" class="py-20 bg-luxury-black-800">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto text-center mb-16">
+      <h2
+        class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-rose-gold-500 to-rose-gold-600 bg-clip-text text-transparent mb-6"
+      >
+        Sobre Nosotros
+      </h2>
+      <div class="mb-8">
+        <div class="inline-block bg-rose-gold-500/10 border-2 border-rose-gold-500/30 rounded-full px-6 py-3 mb-6">
+          <p class="text-2xl md:text-3xl font-bold text-rose-gold-500">
+            +{añosExperiencia} Años de Experiencia
+          </p>
+          <p class="text-sm text-gray-400">Desde 2004</p>
+        </div>
+      </div>
+      <p class="text-lg text-gray-300">
+        GAMIR SALON es tu destino de confianza para belleza y estilismo en Tampico, Tamaulipas.
+        Con más de {añosExperiencia} años de experiencia, nos especializamos en ofrecer servicios profesionales
+        de alta calidad que realzan tu belleza natural con las últimas tendencias y técnicas en cortes,
+        color, tratamientos capilares y cuidado personal.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div
+        class="text-center p-6 bg-luxury-black-900/50 rounded-xl border-2 border-rose-gold-500/30 hover:border-rose-gold-500/60 transition-all hover:shadow-lg hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
+      >
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-rose-gold-500 to-rose-gold-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-rose-gold-500/30"
+        >
+          <Zap class="w-8 h-8 text-luxury-black-900" />
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-rose-gold-500">Experiencia</h3>
+        <p class="text-gray-400">
+          Estilistas profesionales con amplia experiencia y capacitación constante
+        </p>
+      </div>
+
+      <div
+        class="text-center p-6 bg-luxury-black-900/50 rounded-xl border-2 border-rose-gold-500/30 hover:border-rose-gold-500/60 transition-all hover:shadow-lg hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
+      >
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-rose-gold-500 to-rose-gold-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-rose-gold-500/30"
+        >
+          <Shield class="w-8 h-8 text-luxury-black-900" />
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-rose-gold-500">Calidad</h3>
+        <p class="text-gray-400">
+          Productos profesionales Avina y las mejores técnicas de estilismo
+        </p>
+      </div>
+
+      <div
+        class="text-center p-6 bg-luxury-black-900/50 rounded-xl border-2 border-rose-gold-500/30 hover:border-rose-gold-500/60 transition-all hover:shadow-lg hover:shadow-rose-gold-500/20 group backdrop-blur-sm"
+      >
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-rose-gold-500 to-rose-gold-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-rose-gold-500/30"
+        >
+          <Smile class="w-8 h-8 text-luxury-black-900" />
+        </div>
+        <h3 class="text-xl font-semibold mb-2 text-rose-gold-500">Atención Personalizada</h3>
+        <p class="text-gray-400">
+          Cada cliente es único y merece un servicio excepcional
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

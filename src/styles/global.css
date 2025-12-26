@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+@theme {
+  /* Colores Rose Gold */
+  --color-rose-gold-50: #FDF8F7;
+  --color-rose-gold-100: #F9EFED;
+  --color-rose-gold-200: #F2DED9;
+  --color-rose-gold-300: #EBCDC5;
+  --color-rose-gold-400: #E5BCB1;
+  --color-rose-gold-500: #E0BFB8;
+  --color-rose-gold-600: #D4AF37;
+  --color-rose-gold-700: #B8963D;
+  --color-rose-gold-800: #9C7D32;
+  --color-rose-gold-900: #7F6428;
+
+  /* Colores Luxury Black */
+  --color-luxury-black-50: #F5F5F5;
+  --color-luxury-black-100: #E5E5E5;
+  --color-luxury-black-200: #CCCCCC;
+  --color-luxury-black-300: #B3B3B3;
+  --color-luxury-black-400: #999999;
+  --color-luxury-black-500: #808080;
+  --color-luxury-black-600: #666666;
+  --color-luxury-black-700: #4D4D4D;
+  --color-luxury-black-800: #212121;
+  --color-luxury-black-900: #121212;
+}
