@@ -5,7 +5,10 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://gamirsalon.com', // Cambia esto por tu dominio real
+  site: 'https://angozero.github.io',
+
+  base: '/gamir',
+
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],
